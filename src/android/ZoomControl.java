@@ -72,7 +72,7 @@ public class ZoomControl extends CordovaPlugin {
                     try {
                         boolean enabled=args.getBoolean(0);
                         LOG.d("setDisplayZoomControls", "executing setDisplayZoomControls");
-                        webView.getSettings().setDisplayZoomControls(false);
+                        webView.getSettings().setDisplayZoomControls(enabled);
                         callbackContext.success("OK");
                     } catch (Exception e) {
                         LOG.e("setDisplayZoomControls", "Error: " + e.getMessage());

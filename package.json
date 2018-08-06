@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-zoom-control",
+  "version": "0.1.0",
+  "description": "Plugin for enable the native zoom control on cordova",
+  "cordova": {
+    "id": "cordova-plugin-zoom-control",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Flavien",
+  "license": "MIT"
+}
