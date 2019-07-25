@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-zoom-control-2",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Plugin for enable the native zoom control on cordova",
   "cordova": {
     "id": "cordova-plugin-zoom-control-2",

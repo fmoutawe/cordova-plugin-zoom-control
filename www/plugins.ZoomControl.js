@@ -1,23 +1,29 @@
 // creating plugin
 var exec = require("cordova/exec");
 
-function ZoomControl() {};
+function ZoomControl() {
+}
 
-ZoomControl.prototype.ZoomControl = function(enabled) {
-	exec(null, function(error){
-		alert("Error calling ZoomControl::ZoomControl:"+error);
-	}, "ZoomControl", "ZoomControl", [enabled]);
+ZoomControl.prototype.ZoomControl = function (enabled) {
+  exec(null, function (error) {
+    console.log("Error calling ZoomControl::ZoomControl:", error);
+  }, "ZoomControl", "ZoomControl", [enabled]);
 };
-ZoomControl.prototype.setBuiltInZoomControls = function(enabled) {
-	exec(null, function(error){
-		alert("Error calling ZoomControl::setBuiltInZoomControls:"+error);
-	}, "ZoomControl", "setBuiltInZoomControls", [enabled]);
+ZoomControl.prototype.setBuiltInZoomControls = function (enabled) {
+  exec(null, function (error) {
+    console.log("Error calling ZoomControl::setBuiltInZoomControls:", error);
+  }, "ZoomControl", "setBuiltInZoomControls", [enabled]);
 };
-ZoomControl.prototype.setDisplayZoomControls = function(enabled) {
-	exec(null, function(error){
-		alert("Error calling ZoomControl::setDisplayZoomControls:"+error);
-	}, "ZoomControl", "setDisplayZoomControls", [enabled]);
+ZoomControl.prototype.setDisplayZoomControls = function (enabled) {
+  exec(null, function (error) {
+    console.log("Error calling ZoomControl::setDisplayZoomControls:", error);
+  }, "ZoomControl", "setDisplayZoomControls", [enabled]);
+};
+ZoomControl.prototype.setUseWideViewPort = function (enabled) {
+  exec(null, function (error) {
+    console.log("Error calling ZoomControl::setUseWideViewPort:", error);
+  }, "ZoomControl", 'setUseWideViewPort', [enabled]);
 };
 
-var ZoomControl = new ZoomControl();
-module.exports = ZoomControl;
+var zoomControl = new ZoomControl();
+module.exports = zoomControl;
