@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-zoom-control-2" version="0.4.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-plugin-zoom-control-2" version="0.4.2" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-plugin-zoom-control</name>
     <js-module name="ZoomControl" src="www/plugins.ZoomControl.js">

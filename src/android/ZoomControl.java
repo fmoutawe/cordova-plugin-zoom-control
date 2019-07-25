@@ -47,17 +47,17 @@ public class ZoomControl extends CordovaPlugin {
             return true;
         }
 
-        if ("setBuiltInZoomControls".equals(action)) {
+        if ("setUseWideViewPort".equals(action)) {
             final WebView webView = (WebView)this.webView.getEngine().getView();
             cordova.getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     try {
                         boolean enabled=args.getBoolean(0);
-                        LOG.d("setBuiltInZoomControls", "executing setBuiltInZoomControls");
-                        webView.getSettings().setBuiltInZoomControls(enabled);
+                        LOG.d("setUseWideViewPort", "executing setUseWideViewPort");
+                        webView.getSettings().setUseWideViewPort(enabled);
                         callbackContext.success("OK");
                     } catch (Exception e) {
-                        LOG.e("setBuiltInZoomControls", "Error: " + e.getMessage());
+                        LOG.e("setUseWideViewPort", "Error: " + e.getMessage());
                         callbackContext.error("Error: " + e.getMessage());
                     }
                 }
