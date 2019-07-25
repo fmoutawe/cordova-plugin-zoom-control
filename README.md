@@ -32,7 +32,8 @@ Usage example
   		 cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
   		 // enabling display zoom control
   		 cordova.plugins.ZoomControl.setDisplayZoomControls("true");
-  		 
+  		 // enabling wide viewport
+  		 cordova.plugins.ZoomControl.setUseWideViewPort("true");
   	 }, function(){
   		 alert('error deviceready');
   	 });
